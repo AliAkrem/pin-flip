@@ -37,6 +37,8 @@ class SwitchLangModal extends StatefulWidget {
 class _SwitchLangModalState extends State<SwitchLangModal> {
   Locale _locale = const Locale('en');
 
+  String newValue = 'en';
+
   void getLocal() async {
     final prefs = await SharedPreferences.getInstance();
 
@@ -45,6 +47,7 @@ class _SwitchLangModalState extends State<SwitchLangModal> {
     if (locale != null) {
       setState(() {
         _locale = Locale(locale);
+        newValue = _locale.languageCode;
       });
     }
   }
@@ -86,36 +89,37 @@ class _SwitchLangModalState extends State<SwitchLangModal> {
               focusColor: Theme.of(context).scaffoldBackgroundColor,
               dropdownColor: Theme.of(context).scaffoldBackgroundColor,
               padding: const EdgeInsets.symmetric(horizontal: 8),
-              value: _locale.languageCode,
+              value: newValue,
               underline: const SizedBox(),
               items: const [
                 DropdownMenuItem(value: 'en', child: Text('English')),
-                DropdownMenuItem(value: 'ar', child: Text('Arabic')),
+                DropdownMenuItem(
+                  value: 'ar',
+                  child: Text(
+                    'العربية',
+                    style: TextStyle(fontFamily: "NotoKufiArabic"),
+                  ),
+                ),
               ],
               onChanged: (value) async {
-                final prefs = await SharedPreferences.getInstance();
-                final locale = prefs.getString(localeKey);
-                if (value != null && locale != value) {
-                  final prefs = await SharedPreferences.getInstance();
-                  await prefs.setString(localeKey, value).then((success) async {
-                    if (success) {
-                      await Restart.restartApp();
-                    }
-                  });
-                }
+                await switchLang(value);
               },
             ),
+            const SizedBox(height: 16.0),
             SizedBox(
-              width: 300, // Adjust this value as needed
+              width: 300,
               child: Row(
                 mainAxisSize: MainAxisSize.min,
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Button(
                     variant: Button.primary,
-                    onPressed: () {
-                      Navigator.of(context).pop();
-                    },
+                    onPressed: newValue != _locale.languageCode
+                        ? () {
+                            confirm(newValue);
+                            Navigator.of(context).pop();
+                          }
+                        : null,
                     child: const Text('Confirm'),
                   ),
                   const SizedBox(width: 8.0),
@@ -133,5 +137,25 @@ class _SwitchLangModalState extends State<SwitchLangModal> {
         ),
       ),
     );
+  }
+
+  Future<void> confirm(String value) async {
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setString(localeKey, value).then((success) async {
+      if (success) {
+        await Restart.restartApp();
+      }
+    });
+  }
+
+  Future<void> switchLang(String? value) async {
+    final prefs = await SharedPreferences.getInstance();
+    final locale = prefs.getString(localeKey);
+
+    if (value != null && locale != value) {
+      setState(() {
+        newValue = value;
+      });
+    }
   }
 }

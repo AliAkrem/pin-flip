@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:pin_flip/utils/colors.dart';
 
-class Button extends StatelessWidget {
+class Button extends StatefulWidget {
   final Widget child;
   final VoidCallback? onPressed;
   final String? variant;
@@ -9,51 +9,55 @@ class Button extends StatelessWidget {
   static const String danger = 'danger';
   static const String outlined = 'outlined';
 
+  const Button({
+    required this.child,
+    required this.onPressed,
+    this.variant,
+    // this.enabled,
+    super.key,
+  });
+
+  @override
+  State<Button> createState() => _ButtonState();
+}
+
+class _ButtonState extends State<Button> {
   Color get _backgroundColor {
-    switch (variant) {
-      case primary:
+    switch (widget.variant) {
+      case Button.primary:
         return PinFlipColors.buttonColor;
-      case danger:
+      case Button.danger:
         return PinFlipColors.danger;
-      case outlined:
+      case Button.outlined:
       default:
         return Colors.transparent;
     }
   }
 
   Color get _foregroundColor {
-    switch (variant) {
-      case primary:
-      case danger:
+    switch (widget.variant) {
+      case Button.primary:
+      case Button.danger:
         return Colors.white;
-      case outlined:
+      case Button.outlined:
       default:
         return PinFlipColors.buttonColor;
     }
   }
 
   BorderSide get _border {
-    return variant == outlined
+    return widget.variant == Button.outlined
         ? const BorderSide(color: PinFlipColors.buttonColor)
         : BorderSide.none;
   }
-
-
-  const Button({
-    required this.child,
-    required this.onPressed,
-    this.variant,
-    super.key,
-  });
-
-  
-  
 
   @override
   Widget build(BuildContext context) {
     return TextButton(
       style: TextButton.styleFrom(
-        foregroundColor: _foregroundColor ,
+        disabledBackgroundColor: Colors.grey,
+        disabledForegroundColor: Colors.white70,
+        foregroundColor: _foregroundColor,
         backgroundColor: _backgroundColor,
         padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 24),
         shape: RoundedRectangleBorder(
@@ -61,8 +65,8 @@ class Button extends StatelessWidget {
           side: _border,
         ),
       ),
-      onPressed: onPressed,
-      child: child,
+      onPressed: widget.onPressed,
+      child: widget.child,
     );
   }
 }
