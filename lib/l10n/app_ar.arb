@@ -1,0 +1,355 @@
+{
+  "helloWorld": "مرحباً بالعالم!",
+  "@helloWorld": {
+    "description": "تحية المبرمج الجديد"
+  },
+  "tabTitleOverview": "نظرة عامة",
+  "@tabTitleOverview": {
+    "description": ""
+  },
+  "tabTitleAccounts": "الحسابات",
+  "@tabTitleAccounts": {
+    "description": ""
+  },
+  "tabTitleBills": "الفواتير",
+  "@tabTitleBills": {
+    "description": ""
+  },
+  "tabTitleBudgets": "الميزانيات",
+  "@tabTitleBudgets": {
+    "description": ""
+  },
+  "tabTitleSettings": "الإعدادات",
+  "@tabTitleSettings": {
+    "description": ""
+  },
+  "tabTitleProfile": "الملف الشخصي",
+  "@tabTitleProfile": {
+    "description": ""
+  },
+  "billsHeroLabelBillsDue": "الفواتير المستحقة",
+  "@billsHeroLabelBillsDue": {
+    "description": ""
+  },
+  "pinFlipAccountDataChecking": "الحساب الجاري",
+  "@pinFlipAccountDataChecking": {
+    "description": "اسم الحساب الذي يتكون من قبل المستخدم."
+  },
+  "pinFlipAccountDataHomeSavings": "مدخرات المنزل",
+  "@pinFlipAccountDataHomeSavings": {
+    "description": "اسم الحساب الذي يتكون من قبل المستخدم."
+  },
+  "pinFlipAccountDataCarSavings": "مدخرات السيارة",
+  "@pinFlipAccountDataCarSavings": {
+    "description": "اسم الحساب الذي يتكون من قبل المستخدم."
+  },
+  "pinFlipAccountDataVacation": "العطلة",
+  "@pinFlipAccountDataVacation": {
+    "description": "اسم الحساب الذي يتكون من قبل المستخدم."
+  },
+  "pinFlipAccountDetailDataAnnualPercentageYield": "العائد السنوي النسبي",
+  "@pinFlipAccountDetailDataAnnualPercentageYield": {
+    "description": "عنوان لإحصائيات الحساب.أقل من نسبة مئوية مثل 0.10 ٪."
+  },
+  "pinFlipAccountDetailDataInterestRate": "معدل الفائدة",
+  "@pinFlipAccountDetailDataInterestRate": {
+    "description": "عنوان لإحصائيات الحساب.أقل من مبلغ الدولار مثل 100 دولار سيتم عرضه."
+  },
+  "pinFlipAccountDetailDataInterestYtd": "الفائدة منذ بداية العام",
+  "@pinFlipAccountDetailDataInterestYtd": {
+    "description": "عنوان لإحصائيات الحساب.أقل من مبلغ الدولار مثل 100 دولار سيتم عرضه."
+  },
+  "pinFlipAccountDetailDataInterestPaidLastYear": "الفائدة المدفوعة العام الماضي",
+  "@pinFlipAccountDetailDataInterestPaidLastYear": {
+    "description": "عنوان لإحصائيات الحساب.أقل من مبلغ الدولار مثل 100 دولار سيتم عرضه."
+  },
+  "pinFlipAccountDetailDataNextStatement": "كشف الحساب القادم",
+  "@pinFlipAccountDetailDataNextStatement": {
+    "description": "عنوان تفاصيل الحساب.أقل من تاريخ إصدار بيان الحساب التالي."
+  },
+  "pinFlipAccountDetailDataAccountOwner": "صاحب الحساب",
+  "@pinFlipAccountDetailDataAccountOwner": {
+    "description": "عنوان تفاصيل الحساب.سيتم عرض أسفل اسم مالك الحساب."
+  },
+  "pinFlipBillDetailTotalAmount": "المبلغ الإجمالي",
+  "@pinFlipBillDetailTotalAmount": {
+    "description": "عنوان العمود حيث يعرض إجمالي مبلغ الدولار الذي يمتلكه المستخدم في الفواتير."
+  },
+  "pinFlipBillDetailAmountPaid": "المبلغ المدفوع",
+  "@pinFlipBillDetailAmountPaid": {
+    "description": "عنوان العمود حيث يعرض المبلغ الذي دفعه المستخدم."
+  },
+  "pinFlipBillDetailAmountDue": "المبلغ المستحق",
+  "@pinFlipBillDetailAmountDue": {
+    "description": "العنوان للعمود حيث يعرض المبلغ الذي يتمتع به المستخدم."
+  },
+  "pinFlipBudgetCategoryCoffeeShops": "مقاهي",
+  "@pinFlipBudgetCategoryCoffeeShops": {
+    "description": "فئة للميزانية ، لفرز النفقات / الفواتير في."
+  },
+  "pinFlipBudgetCategoryGroceries": "البقالة",
+  "@pinFlipBudgetCategoryGroceries": {
+    "description": "فئة للميزانية ، لفرز النفقات / الفواتير في."
+  },
+  "pinFlipBudgetCategoryRestaurants": "المطاعم",
+  "@pinFlipBudgetCategoryRestaurants": {
+    "description": "فئة للميزانية ، لفرز النفقات / الفواتير في."
+  },
+  "pinFlipBudgetCategoryClothing": "الملابس",
+  "@pinFlipBudgetCategoryClothing": {
+    "description": "فئة للميزانية ، لفرز النفقات / الفواتير في."
+  },
+  "pinFlipBudgetDetailTotalCap": "الحد الأقصى الإجمالي",
+  "@pinFlipBudgetDetailTotalCap": {
+    "description": "عنوان العمود حيث يعرض إجمالي الحد الأقصى للدولار الذي يتمتع به المستخدم لميزانيته."
+  },
+  "pinFlipBudgetDetailAmountUsed": "المبلغ المستخدم",
+  "@pinFlipBudgetDetailAmountUsed": {
+    "description": "عنوان العمود حيث يعرض مبلغ الدولار الذي استخدمه المستخدم في ميزانيته."
+  },
+  "pinFlipBudgetDetailAmountLeft": "المبلغ المتبقي",
+  "@pinFlipBudgetDetailAmountLeft": {
+    "description": "عنوان العمود حيث يعرض مبلغ الدولار الذي تركه المستخدم في ميزانيته."
+  },
+  "pinFlipSettingsManageAccounts": "إدارة الحسابات",
+  "@pinFlipSettingsManageAccounts": {
+    "description": "رابط للانتقال إلى الصفحة 'إدارة الحسابات'."
+  },
+  "pinFlipSettingsTaxDocuments": "المستندات الضريبية",
+  "@pinFlipSettingsTaxDocuments": {
+    "description": "رابط للانتقال إلى صفحة 'المستندات الضريبية'."
+  },
+  "pinFlipSettingsPasscodeAndTouchId": "رمز المرور وبصمة الإصبع",
+  "@pinFlipSettingsPasscodeAndTouchId": {
+    "description": "رابط للانتقال إلى الصفحة 'رمز المرور ومعرف اللمس'."
+  },
+  "pinFlipSettingsNotifications": "الإشعارات",
+  "@pinFlipSettingsNotifications": {
+    "description": "رابط للانتقال إلى الصفحة 'إشعارات'."
+  },
+  "pinFlipSettingsPersonalInformation": "المعلومات الشخصية",
+  "@pinFlipSettingsPersonalInformation": {
+    "description": "رابط للانتقال إلى الصفحة 'المعلومات الشخصية'."
+  },
+  "pinFlipSettingsPaperlessSettings": "إعدادات بدون أوراق",
+  "@pinFlipSettingsPaperlessSettings": {
+    "description": "رابط للانتقال إلى الصفحة 'إعدادات بلا ورق'."
+  },
+  "pinFlipSettingsFindAtms": "البحث عن أجهزة الصراف الآلي",
+  "@pinFlipSettingsFindAtms": {
+    "description": "رابط للانتقال إلى الصفحة 'البحث عن أجهزة الصراف الآلي'."
+  },
+  "pinFlipSettingsHelp": "المساعدة",
+  "@pinFlipSettingsHelp": {
+    "description": "رابط للانتقال إلى الصفحة 'مساعدة'."
+  },
+  "pinFlipSettingsSignOut": "تسجيل الخروج",
+  "@pinFlipSettingsSignOut": {
+    "description": "رابط للانتقال إلى الصفحة 'تسجيل الخروج'."
+  },
+  "pinFlipAccountTotal": "الإجمالي",
+  "@pinFlipAccountTotal": {
+    "description": "عنوان صفحة نظرة عامة على 'إجمالي قيمة الحساب' ، يتم عرض قيمة الدولار بجوارها."
+  },
+  "pinFlipBillsDue": "المستحق",
+  "@pinFlipBillsDue": {
+    "description": "عنوان صفحة 'الفواتير المستحقة' ، يتم عرض قيمة الدولار بجانبها."
+  },
+  "pinFlipBudgetLeft": "المتبقي",
+  "@pinFlipBudgetLeft": {
+    "description": "عنوان صفحة 'يسار الميزانية' ، يتم عرض قيمة الدولار بجوارها."
+  },
+  "pinFlipAccounts": "الحسابات",
+  "@pinFlipAccounts": {
+    "description": "نصي الارتباط للحصول على صفحة الحسابات."
+  },
+  "pinFlipBills": "الفواتير",
+  "@pinFlipBills": {
+    "description": "نصي الارتباط لصفحة الفواتير."
+  },
+  "pinFlipBudgets": "الميزانيات",
+  "@pinFlipBudgets": {
+    "description": "نصي الارتباط لصفحة الميزانيات."
+  },
+  "pinFlipAlerts": "التنبيهات",
+  "@pinFlipAlerts": {
+    "description": "عنوان التنبيهات جزء من صفحة نظرة عامة."
+  },
+  "pinFlipSeeAll": "عرض الكل",
+  "@pinFlipSeeAll": {
+    "description": "نصي ارتباط زر لرؤية جميع البيانات للفئة."
+  },
+  "pinFlipFinanceLeft": " متبقي",
+  "@pinFlipFinanceLeft": {
+    "description": "يتم عرضه على أنه 'مبلغ بالدولار المتبقي' ، على سبيل المثال 46.70 دولارًا ، لفئة ميزانية."
+  },
+  "pinFlipTitleOverview": "نظرة عامة",
+  "@pinFlipTitleOverview": {
+    "description": "رابط التنقل إلى صفحة نظرة عامة."
+  },
+  "pinFlipTitleAccounts": "الحسابات",
+  "@pinFlipTitleAccounts": {
+    "description": "رابط التنقل إلى صفحة الحسابات."
+  },
+  "pinFlipTitleBills": "الفواتير",
+  "@pinFlipTitleBills": {
+    "description": "رابط التنقل إلى صفحة الفواتير."
+  },
+  "pinFlipTitleBudgets": "الميزانيات",
+  "@pinFlipTitleBudgets": {
+    "description": "رابط التنقل إلى صفحة الميزانيات."
+  },
+  "pinFlipTitleSettings": "الإعدادات",
+  "@pinFlipTitleSettings": {
+    "description": "رابط التنقل إلى صفحة الإعدادات."
+  },
+  "pinFlipLoginLoginToPinFlip": "تسجيل الدخول إلى PinFlip",
+  "@pinFlipLoginLoginToPinFlip": {
+    "description": "عنوان صفحة تسجيل الدخول لتطبيق PinFlip (لا يلزم ترجمة PinFlip لأنه اسم منتج)."
+  },
+  "pinFlipLoginNoAccount": "ليس لديك حساب؟",
+  "@pinFlipLoginNoAccount": {
+    "description": "مطالبة بالتسجيل للحصول على حساب."
+  },
+  "pinFlipLoginSignUp": "تسجيل",
+  "@pinFlipLoginSignUp": {
+    "description": "نص زر للتسجيل للحصول على حساب."
+  },
+  "pinFlipLoginUsername": "اسم المستخدم",
+  "@pinFlipLoginUsername": {
+    "description": "حقل اسم المستخدم في نموذج تسجيل الدخول."
+  },
+  "pinFlipLoginPassword": "كلمة المرور",
+  "@pinFlipLoginPassword": {
+    "description": "حقل كلمة المرور في نموذج تسجيل الدخول."
+  },
+  "pinFlipLoginLabelLogin": "تسجيل الدخول",
+  "@pinFlipLoginLabelLogin": {
+    "description": "نص التسمية لتسجيل الدخول."
+  },
+  "pinFlipLoginRememberMe": "تذكرني",
+  "@pinFlipLoginRememberMe": {
+    "description": "نص إذا كان المستخدم يريد البقاء مسجلاً."
+  },
+  "pinFlipLoginButtonLogin": "تسجيل الدخول",
+  "@pinFlipLoginButtonLogin": {
+    "description": "نص لزر تسجيل الدخول."
+  },
+  "pinFlipAlertsMessageHeadsUpShopping": "تنبيه، لقد استخدمت {percent} من ميزانية التسوق لهذا الشهر.",
+  "@pinFlipAlertsMessageHeadsUpShopping": {
+    "description": "رسالة تنبيه معروضة عندما يكون المستخدم قد استخدم أكثر من 90 ٪ من ميزانية التسوق الخاصة بهم.",
+    "placeholders": {
+      "percent": {
+        "example": "90%"
+      }
+    }
+  },
+  "pinFlipAlertsMessageSpentOnRestaurants": "لقد أنفقت {amount} على المطاعم هذا الأسبوع.",
+  "@pinFlipAlertsMessageSpentOnRestaurants": {
+    "description": "رسالة تنبيه مبينة عندما يكون المستخدم قد أنفق 120 دولارًا على المطاعم هذا الأسبوع.",
+    "placeholders": {
+      "amount": {
+        "example": "$120"
+      }
+    }
+  },
+  "pinFlipBirthDate": "تاريخ الميلاد",
+  "@pinFlipBirthDate": {
+    "description": "تسمية لتاريخ ميلاد المستخدم."
+  },
+  "pinFlipPlaceBirth": "مكان الميلاد",
+  "@pinFlipPlaceBirth": {
+    "description": "تسمية لمكان ميلاد المستخدم."
+  },
+  "pinFlipSettingsSwitchLang": "ضبط لغة",
+  "@pinFlipSettingsSwitchLang": {
+    "description": "ضبط لغة التبديل"
+  },
+  "pinFlipAlertsMessageATMFees": "لقد أنفقت {amount} في رسوم الصراف الآلي هذا الشهر",
+  "@pinFlipAlertsMessageATMFees": {
+    "description": "رسالة تنبيه معروضة عندما يكون المستخدم قد أنفق 24 دولارًا في رسوم أجهزة الصراف الآلي هذا الشهر.",
+    "placeholders": {
+      "amount": {
+        "example": "24"
+      }
+    }
+  },
+  "pinFlipAlertsMessageCheckingAccount": "عمل رائع! حسابك الجاري أعلى بنسبة {percent} من الشهر الماضي.",
+  "@pinFlipAlertsMessageCheckingAccount": {
+    "description": "رسالة التنبيه التي تظهر عندما يكون حساب التحقق أعلى بنسبة 1 ٪ عن الشهر الماضي.",
+    "placeholders": {
+      "percent": {
+        "example": "1%"
+      }
+    }
+  },
+  "pinFlipAlertsMessageUnassignedTransactions": "{count, plural, =1{زد من خصمك الضريبي المحتمل! قم بتعيين فئات لمعاملة واحدة غير مصنفة.}other{زد من خصمك الضريبي المحتمل! قم بتعيين فئات لـ {count} معاملات غير مصنفة.}}",
+  "@pinFlipAlertsMessageUnassignedTransactions": {
+    "description": "رسالة تنبيه تظهر عندما يكون لديك معاملات غير معروفة.",
+    "placeholders": {
+      "count": {
+        "example": "2"
+      }
+    }
+  },
+  "pinFlipSeeAllAccounts": "عرض جميع الحسابات",
+  "@pinFlipSeeAllAccounts": {
+    "description": "تسمية دلالات لزر لترى جميع الحسابات.الحسابات تشير إلى الحساب المصرفي هنا."
+  },
+  "pinFlipSeeAllBills": "عرض جميع الفواتير",
+  "@pinFlipSeeAllBills": {
+    "description": "تسمية دلالات لزر لرؤية جميع الفواتير."
+  },
+  "pinFlipSeeAllBudgets": "عرض جميع الميزانيات",
+  "@pinFlipSeeAllBudgets": {
+    "description": "تسمية دلالات لزر لترى جميع الميزانيات."
+  },
+  "pinFlipAccountAmount": "حساب {accountName} رقم {accountNumber} بمبلغ {amount}.",
+  "@pinFlipAccountAmount": {
+    "description": "تسمية الدلالات للصف مع اسم الحساب المصرفي (على سبيل المثال المراجعة) ورقم حسابه المصرفي (على سبيل المثال 123) ، مع مقدار الأموال المودعة فيه (على سبيل المثال 12 دولارًا).",
+    "placeholders": {
+      "accountName": {
+        "example": "مدخرات المنزل"
+      },
+      "accountNumber": {
+        "example": "1234"
+      },
+      "amount": {
+        "example": "$12"
+      }
+    }
+  },
+  "pinFlipBillAmount": "فاتورة {billName} مستحقة في {date} بمبلغ {amount}.",
+  "@pinFlipBillAmount": {
+    "description": "تسمية الدلالات للصف مع فاتورة (مثال على الاسم إيجار) ، عندما يكون الفاتورة مستحقة (1/12/2019 على سبيل المثال) وكم من المال (12 دولارًا).",
+    "placeholders": {
+      "billName": {
+        "example": "Rent"
+      },
+      "date": {
+        "example": "1/24/2019"
+      },
+      "amount": {
+        "example": "$12"
+      }
+    }
+  },
+  "pinFlipBudgetAmount": "ميزانية {budgetName} مع استخدام {amountUsed} من {amountTotal}، متبقي {amountLeft}",
+  "@pinFlipBudgetAmount": {
+    "description": "تسمية الدلالات للصف مع ميزانية (ميزانية الإسكان على سبيل المثال) ، مع مقدار استخدام الميزانية (على سبيل المثال 5 دولارات) ، إجمالي الميزانية (على سبيل المثال 100 دولار) والمبلغ المتبقي في الميزانية (على سبيل المثال 95 دولار).",
+    "placeholders": {
+      "budgetName": {
+        "example": "Groceries"
+      },
+      "amountUsed": {
+        "example": "$5"
+      },
+      "amountTotal": {
+        "example": "$100"
+      },
+      "amountLeft": {
+        "example": "$95"
+      }
+    }
+  }
+}

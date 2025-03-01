@@ -1,0 +1,71 @@
+name: pin_flip
+description: "A new Flutter project."
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.4.3 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  google_fonts: ^6.2.1
+  animations: ^2.0.11
+  intl: ^0.19.0
+  adaptive_breakpoints: ^0.1.7
+  shared_preferences: ^2.3.3
+  restart_app: ^1.2.1
+
+  cupertino_icons: ^1.0.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+
+  generate: true
+
+  assets:
+    - assets/images/logo.png
+    - assets/images/thumb.png
+    - assets/images/profile_image.png
+
+  fonts:
+    - family: Eczar
+      fonts:
+        - asset: assets/fonts/Eczar-Regular.ttf
+        - asset: assets/fonts/Eczar-Medium.ttf
+        - asset: assets/fonts/Eczar-SemiBold.ttf
+        - asset: assets/fonts/Eczar-Bold.ttf
+        - asset: assets/fonts/Eczar-ExtraBold.ttf
+        - asset: assets/fonts/Eczar-VariableFont_wght.ttf
+          style: normal
+    - family: NotoKufiArabic
+      fonts:
+        - asset: assets/fonts/NotoKufiArabic-Thin.ttf
+          weight: 100
+        - asset: assets/fonts/NotoKufiArabic-ExtraLight.ttf
+          weight: 200
+        - asset: assets/fonts/NotoKufiArabic-Light.ttf
+          weight: 300
+        - asset: assets/fonts/NotoKufiArabic-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/NotoKufiArabic-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/NotoKufiArabic-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/NotoKufiArabic-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/NotoKufiArabic-ExtraBold.ttf
+          weight: 800
+        - asset: assets/fonts/NotoKufiArabic-Black.ttf
+          weight: 900
+        - asset: assets/fonts/NotoKufiArabic-VariableFont_wght.ttf
+          style: normal

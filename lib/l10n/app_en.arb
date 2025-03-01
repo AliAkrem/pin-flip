@@ -1,0 +1,355 @@
+{
+  "helloWorld": "Hello World!",
+  "@helloWorld": {
+    "description": "The conventional newborn programmer greeting"
+  },
+  "tabTitleOverview": "Overview",
+  "@tabTitleOverview": {
+    "description": ""
+  },
+  "tabTitleAccounts": "Accounts",
+  "@tabTitleAccounts": {
+    "description": ""
+  },
+  "tabTitleBills": "Bills",
+  "@tabTitleBills": {
+    "description": ""
+  },
+  "tabTitleBudgets": "Budgets",
+  "@tabTitleBudgets": {
+    "description": ""
+  },
+  "tabTitleSettings": "Settings",
+  "@tabTitleSettings": {
+    "description": ""
+  },
+  "tabTitleProfile": "Profile",
+  "@tabTitleProfile": {
+    "description": ""
+  },
+  "billsHeroLabelBillsDue": "Bills due",
+  "@billsHeroLabelBillsDue": {
+    "description": ""
+  },
+  "pinFlipAccountDataChecking": "Checking",
+  "@pinFlipAccountDataChecking": {
+    "description": "Name for account made up by user."
+  },
+  "pinFlipAccountDataHomeSavings": "Home Savings",
+  "@pinFlipAccountDataHomeSavings": {
+    "description": "Name for account made up by user."
+  },
+  "pinFlipAccountDataCarSavings": "Car Savings",
+  "@pinFlipAccountDataCarSavings": {
+    "description": "Name for account made up by user."
+  },
+  "pinFlipAccountDataVacation": "Vacation",
+  "@pinFlipAccountDataVacation": {
+    "description": "Name for account made up by user."
+  },
+  "pinFlipAccountDetailDataAnnualPercentageYield": "Annual Percentage Yield",
+  "@pinFlipAccountDetailDataAnnualPercentageYield": {
+    "description": "Title for account statistics. Below a percentage such as 0.10% will be displayed."
+  },
+  "pinFlipAccountDetailDataInterestRate": "Interest Rate",
+  "@pinFlipAccountDetailDataInterestRate": {
+    "description": "Title for account statistics. Below a dollar amount such as $100 will be displayed."
+  },
+  "pinFlipAccountDetailDataInterestYtd": "Interest YTD",
+  "@pinFlipAccountDetailDataInterestYtd": {
+    "description": "Title for account statistics. Below a dollar amount such as $100 will be displayed."
+  },
+  "pinFlipAccountDetailDataInterestPaidLastYear": "Interest Paid Last Year",
+  "@pinFlipAccountDetailDataInterestPaidLastYear": {
+    "description": "Title for account statistics. Below a dollar amount such as $100 will be displayed."
+  },
+  "pinFlipAccountDetailDataNextStatement": "Next Statement",
+  "@pinFlipAccountDetailDataNextStatement": {
+    "description": "Title for an account detail. Below a date for when the next account statement is released."
+  },
+  "pinFlipAccountDetailDataAccountOwner": "Account Owner",
+  "@pinFlipAccountDetailDataAccountOwner": {
+    "description": "Title for an account detail. Below the name of the account owner will be displayed."
+  },
+  "pinFlipBillDetailTotalAmount": "Total Amount",
+  "@pinFlipBillDetailTotalAmount": {
+    "description": "Title for column where it displays the total dollar amount that the user has in bills."
+  },
+  "pinFlipBillDetailAmountPaid": "Amount Paid",
+  "@pinFlipBillDetailAmountPaid": {
+    "description": "Title for column where it displays the amount that the user has paid."
+  },
+  "pinFlipBillDetailAmountDue": "Amount Due",
+  "@pinFlipBillDetailAmountDue": {
+    "description": "Title for column where it displays the amount that the user has due."
+  },
+  "pinFlipBudgetCategoryCoffeeShops": "Coffee Shops",
+  "@pinFlipBudgetCategoryCoffeeShops": {
+    "description": "Category for budget, to sort expenses / bills in."
+  },
+  "pinFlipBudgetCategoryGroceries": "Groceries",
+  "@pinFlipBudgetCategoryGroceries": {
+    "description": "Category for budget, to sort expenses / bills in."
+  },
+  "pinFlipBudgetCategoryRestaurants": "Restaurants",
+  "@pinFlipBudgetCategoryRestaurants": {
+    "description": "Category for budget, to sort expenses / bills in."
+  },
+  "pinFlipBudgetCategoryClothing": "Clothing",
+  "@pinFlipBudgetCategoryClothing": {
+    "description": "Category for budget, to sort expenses / bills in."
+  },
+  "pinFlipBudgetDetailTotalCap": "Total Cap",
+  "@pinFlipBudgetDetailTotalCap": {
+    "description": "Title for column where it displays the total dollar cap that the user has for its budget."
+  },
+  "pinFlipBudgetDetailAmountUsed": "Amount Used",
+  "@pinFlipBudgetDetailAmountUsed": {
+    "description": "Title for column where it displays the dollar amount that the user has used in its budget."
+  },
+  "pinFlipBudgetDetailAmountLeft": "Amount Left",
+  "@pinFlipBudgetDetailAmountLeft": {
+    "description": "Title for column where it displays the dollar amount that the user has left in its budget."
+  },
+  "pinFlipSettingsManageAccounts": "Manage Accounts",
+  "@pinFlipSettingsManageAccounts": {
+    "description": "Link to go to the page 'Manage Accounts."
+  },
+  "pinFlipSettingsTaxDocuments": "Tax Documents",
+  "@pinFlipSettingsTaxDocuments": {
+    "description": "Link to go to the page 'Tax Documents'."
+  },
+  "pinFlipSettingsPasscodeAndTouchId": "Passcode and Touch ID",
+  "@pinFlipSettingsPasscodeAndTouchId": {
+    "description": "Link to go to the page 'Passcode and Touch ID'."
+  },
+  "pinFlipSettingsNotifications": "Notifications",
+  "@pinFlipSettingsNotifications": {
+    "description": "Link to go to the page 'Notifications'."
+  },
+  "pinFlipSettingsPersonalInformation": "Personal Information",
+  "@pinFlipSettingsPersonalInformation": {
+    "description": "Link to go to the page 'Personal Information'."
+  },
+  "pinFlipSettingsPaperlessSettings": "Paperless Settings",
+  "@pinFlipSettingsPaperlessSettings": {
+    "description": "Link to go to the page 'Paperless Settings'."
+  },
+  "pinFlipSettingsFindAtms": "Find ATMs",
+  "@pinFlipSettingsFindAtms": {
+    "description": "Link to go to the page 'Find ATMs'."
+  },
+  "pinFlipSettingsHelp": "Help",
+  "@pinFlipSettingsHelp": {
+    "description": "Link to go to the page 'Help'."
+  },
+  "pinFlipSettingsSignOut": "Sign out",
+  "@pinFlipSettingsSignOut": {
+    "description": "Link to go to the page 'Sign out'."
+  },
+  "pinFlipAccountTotal": "Total",
+  "@pinFlipAccountTotal": {
+    "description": "Title for 'total account value' overview page, a dollar value is displayed next to it."
+  },
+  "pinFlipBillsDue": "Due",
+  "@pinFlipBillsDue": {
+    "description": "Title for 'bills due' page, a dollar value is displayed next to it."
+  },
+  "pinFlipBudgetLeft": "Left",
+  "@pinFlipBudgetLeft": {
+    "description": "Title for 'budget left' page, a dollar value is displayed next to it."
+  },
+  "pinFlipAccounts": "Accounts",
+  "@pinFlipAccounts": {
+    "description": "Link text for accounts page."
+  },
+  "pinFlipBills": "Bills",
+  "@pinFlipBills": {
+    "description": "Link text for bills page."
+  },
+  "pinFlipBudgets": "Budgets",
+  "@pinFlipBudgets": {
+    "description": "Link text for budgets page."
+  },
+  "pinFlipAlerts": "Alerts",
+  "@pinFlipAlerts": {
+    "description": "Title for alerts part of overview page."
+  },
+  "pinFlipSeeAll": "SEE ALL",
+  "@pinFlipSeeAll": {
+    "description": "Link text for button to see all data for category."
+  },
+  "pinFlipFinanceLeft": " LEFT",
+  "@pinFlipFinanceLeft": {
+    "description": "Displayed as 'dollar amount left', for example $46.70 LEFT, for a budget category."
+  },
+  "pinFlipTitleOverview": "OVERVIEW",
+  "@pinFlipTitleOverview": {
+    "description": "The navigation link to the overview page."
+  },
+  "pinFlipTitleAccounts": "ACCOUNTS",
+  "@pinFlipTitleAccounts": {
+    "description": "The navigation link to the accounts page."
+  },
+  "pinFlipTitleBills": "BILLS",
+  "@pinFlipTitleBills": {
+    "description": "The navigation link to the bills page."
+  },
+  "pinFlipTitleBudgets": "BUDGETS",
+  "@pinFlipTitleBudgets": {
+    "description": "The navigation link to the budgets page."
+  },
+  "pinFlipTitleSettings": "SETTINGS",
+  "@pinFlipTitleSettings": {
+    "description": "The navigation link to the settings page."
+  },
+  "pinFlipLoginLoginToPinFlip": "Login to PinFlip",
+  "@pinFlipLoginLoginToPinFlip": {
+    "description": "Title for login page for the PinFlip app (PinFlip does not need to be translated as it is a product name)."
+  },
+  "pinFlipLoginNoAccount": "Don't have an account?",
+  "@pinFlipLoginNoAccount": {
+    "description": "Prompt for signing up for an account."
+  },
+  "pinFlipLoginSignUp": "SIGN UP",
+  "@pinFlipLoginSignUp": {
+    "description": "Button text to sign up for an account."
+  },
+  "pinFlipLoginUsername": "Username",
+  "@pinFlipLoginUsername": {
+    "description": "The username field in an login form."
+  },
+  "pinFlipLoginPassword": "Password",
+  "@pinFlipLoginPassword": {
+    "description": "The password field in an login form."
+  },
+  "pinFlipLoginLabelLogin": "Login",
+  "@pinFlipLoginLabelLogin": {
+    "description": "The label text to login."
+  },
+  "pinFlipLoginRememberMe": "Remember Me",
+  "@pinFlipLoginRememberMe": {
+    "description": "Text if the user wants to stay logged in."
+  },
+  "pinFlipLoginButtonLogin": "LOGIN",
+  "@pinFlipLoginButtonLogin": {
+    "description": "Text for login button."
+  },
+  "pinFlipAlertsMessageHeadsUpShopping": "Heads up, you’ve used up {percent} of your Shopping budget for this month.",
+  "@pinFlipAlertsMessageHeadsUpShopping": {
+    "description": "Alert message shown when for example, user has used more than 90% of their shopping budget.",
+    "placeholders": {
+      "percent": {
+        "example": "90%"
+      }
+    }
+  },
+  "pinFlipAlertsMessageSpentOnRestaurants": "You’ve spent {amount} on Restaurants this week.",
+  "@pinFlipAlertsMessageSpentOnRestaurants": {
+    "description": "Alert message shown when for example, user has spent $120 on Restaurants this week.",
+    "placeholders": {
+      "amount": {
+        "example": "$120"
+      }
+    }
+  },
+  "pinFlipBirthDate": "Date of Birth",
+  "@pinFlipBirthDate": {
+    "description": "Label for the user's date of birth."
+  },
+  "pinFlipPlaceBirth": "Place of Birth",
+  "@pinFlipPlaceBirth": {
+    "description": "Label for the user's place of birth."
+  },
+  "pinFlipSettingsSwitchLang": "Switch language",
+  "@pinFlipSettingsSwitchLang": {
+    "description": "Setting switch language"
+  },
+  "pinFlipAlertsMessageATMFees": "You’ve spent {amount} in ATM fees this month",
+  "@pinFlipAlertsMessageATMFees": {
+    "description": "Alert message shown when for example, the user has spent $24 in ATM fees this month.",
+    "placeholders": {
+      "amount": {
+        "example": "24"
+      }
+    }
+  },
+  "pinFlipAlertsMessageCheckingAccount": "Good work! Your checking account is {percent} higher than last month.",
+  "@pinFlipAlertsMessageCheckingAccount": {
+    "description": "Alert message shown when for example, the checking account is 1% higher than last month.",
+    "placeholders": {
+      "percent": {
+        "example": "1%"
+      }
+    }
+  },
+  "pinFlipAlertsMessageUnassignedTransactions": "{count, plural, =1{Increase your potential tax deduction! Assign categories to 1 unassigned transaction.}other{Increase your potential tax deduction! Assign categories to {count} unassigned transactions.}}",
+  "@pinFlipAlertsMessageUnassignedTransactions": {
+    "description": "Alert message shown when you have unassigned transactions.",
+    "placeholders": {
+      "count": {
+        "example": "2"
+      }
+    }
+  },
+  "pinFlipSeeAllAccounts": "See all accounts",
+  "@pinFlipSeeAllAccounts": {
+    "description": "Semantics label for button to see all accounts. Accounts refer to bank account here."
+  },
+  "pinFlipSeeAllBills": "See all bills",
+  "@pinFlipSeeAllBills": {
+    "description": "Semantics label for button to see all bills."
+  },
+  "pinFlipSeeAllBudgets": "See all budgets",
+  "@pinFlipSeeAllBudgets": {
+    "description": "Semantics label for button to see all budgets."
+  },
+  "pinFlipAccountAmount": "{accountName} account {accountNumber} with {amount}.",
+  "@pinFlipAccountAmount": {
+    "description": "Semantics label for row with bank account name (for example checking) and its bank account number (for example 123), with how much money is deposited in it (for example $12).",
+    "placeholders": {
+      "accountName": {
+        "example": "Home Savings"
+      },
+      "accountNumber": {
+        "example": "1234"
+      },
+      "amount": {
+        "example": "$12"
+      }
+    }
+  },
+  "pinFlipBillAmount": "{billName} bill due {date} for {amount}.",
+  "@pinFlipBillAmount": {
+    "description": "Semantics label for row with a bill (example name is rent), when the bill is due (1/12/2019 for example) and for how much money ($12).",
+    "placeholders": {
+      "billName": {
+        "example": "Rent"
+      },
+      "date": {
+        "example": "1/24/2019"
+      },
+      "amount": {
+        "example": "$12"
+      }
+    }
+  },
+  "pinFlipBudgetAmount": "{budgetName} budget with {amountUsed} used of {amountTotal}, {amountLeft} left",
+  "@pinFlipBudgetAmount": {
+    "description": "Semantics label for row with a budget (housing budget for example), with how much is used of the budget (for example $5), the total budget (for example $100) and the amount left in the budget (for example $95).",
+    "placeholders": {
+      "budgetName": {
+        "example": "Groceries"
+      },
+      "amountUsed": {
+        "example": "$5"
+      },
+      "amountTotal": {
+        "example": "$100"
+      },
+      "amountLeft": {
+        "example": "$95"
+      }
+    }
+  }
+}
