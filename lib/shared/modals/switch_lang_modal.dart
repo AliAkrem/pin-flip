@@ -73,7 +73,7 @@ class _SwitchLangModalState extends State<SwitchLangModal> {
           children: [
             Text(
               widget.title,
-              style: Theme.of(context).textTheme.headlineLarge,
+              style: Theme.of(context).textTheme.bodyLarge,
             ),
             const SizedBox(height: 8.0),
             Text(
@@ -141,6 +141,9 @@ class _SwitchLangModalState extends State<SwitchLangModal> {
 
   Future<void> confirm(String value) async {
     final prefs = await SharedPreferences.getInstance();
+    final locale = prefs.getString(localeKey);
+    if (locale != value) {}
+
     await prefs.setString(localeKey, value).then((success) async {
       if (success) {
         await Restart.restartApp();
@@ -149,10 +152,7 @@ class _SwitchLangModalState extends State<SwitchLangModal> {
   }
 
   Future<void> switchLang(String? value) async {
-    final prefs = await SharedPreferences.getInstance();
-    final locale = prefs.getString(localeKey);
-
-    if (value != null && locale != value) {
+    if (value != null) {
       setState(() {
         newValue = value;
       });

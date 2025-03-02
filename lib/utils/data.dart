@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:pin_flip/formatters.dart';
 import 'package:flutter_gen/gen_l10n/gallery_localizations.dart';
-import 'package:pin_flip/shared/switch_lang_modal.dart';
+import 'package:pin_flip/shared/modals/logout_modal.dart';
+import 'package:pin_flip/shared/modals/switch_lang_modal.dart';
 
 /// Calculates the sum of the primary amounts of a list of [AccountData].
 double sumAccountDataPrimaryAmount(List<AccountData> items) =>
@@ -172,8 +173,8 @@ class DummyDataService {
         value: usdWithSignFormat(context).format(1676.14),
       ),
       UserDetailData(
-        title:
-            GalleryLocalizations.of(context)!.pinFlipAccountDetailDataInterestYtd,
+        title: GalleryLocalizations.of(context)!
+            .pinFlipAccountDetailDataInterestYtd,
         value: usdWithSignFormat(context).format(81.45),
       ),
       UserDetailData(
@@ -287,7 +288,8 @@ class DummyDataService {
   static List<BudgetData> getBudgetDataList(BuildContext context) {
     return <BudgetData>[
       BudgetData(
-        name: GalleryLocalizations.of(context)!.pinFlipBudgetCategoryCoffeeShops,
+        name:
+            GalleryLocalizations.of(context)!.pinFlipBudgetCategoryCoffeeShops,
         primaryAmount: 70,
         amountUsed: 45.49,
       ),
@@ -297,7 +299,8 @@ class DummyDataService {
         amountUsed: 16.45,
       ),
       BudgetData(
-        name: GalleryLocalizations.of(context)!.pinFlipBudgetCategoryRestaurants,
+        name:
+            GalleryLocalizations.of(context)!.pinFlipBudgetCategoryRestaurants,
         primaryAmount: 170,
         amountUsed: 123.25,
       ),
@@ -330,6 +333,7 @@ class DummyDataService {
   static Iterable<SettingsItemModal> getSettingsTitles(BuildContext context) {
     return <SettingsItemModal>[
       SettingsItemModal(
+        icon: Icons.translate,
         title: GalleryLocalizations.of(context)!.pinFlipSettingsSwitchLang,
         action: () {
           showSwitchLangModal(context,
@@ -338,38 +342,12 @@ class DummyDataService {
         },
       ),
       SettingsItemModal(
-        title: GalleryLocalizations.of(context)!.pinFlipSettingsTaxDocuments,
-        action: () {},
-      ),
-      SettingsItemModal(
-        title:
-            GalleryLocalizations.of(context)!.pinFlipSettingsPasscodeAndTouchId,
-        action: () {},
-      ),
-      SettingsItemModal(
-        title: GalleryLocalizations.of(context)!.pinFlipSettingsNotifications,
-        action: () {},
-      ),
-      SettingsItemModal(
-        title:
-            GalleryLocalizations.of(context)!.pinFlipSettingsPersonalInformation,
-        action: () {},
-      ),
-      SettingsItemModal(
-        title: GalleryLocalizations.of(context)!.pinFlipSettingsPaperlessSettings,
-        action: () {},
-      ),
-      SettingsItemModal(
-        title: GalleryLocalizations.of(context)!.pinFlipSettingsFindAtms,
-        action: () {},
-      ),
-      SettingsItemModal(
-        title: GalleryLocalizations.of(context)!.pinFlipSettingsHelp,
-        action: () {},
-      ),
-      SettingsItemModal(
+        icon: Icons.logout,
         title: GalleryLocalizations.of(context)!.pinFlipSettingsSignOut,
-        action: () {},
+        action: () {
+          showLogoutModal(context,
+              title: "are you sure you want to sign-out", description: "");
+        },
       ),
     ].toList();
   }
@@ -409,8 +387,13 @@ class DummyDataService {
 }
 
 class SettingsItemModal {
+  final IconData icon;
   final String title;
   final VoidCallback action;
 
-  SettingsItemModal({required this.title, required this.action});
+  SettingsItemModal({
+    required this.title,
+    required this.action,
+    required this.icon,
+  });
 }

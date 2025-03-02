@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pin_flip/utils/colors.dart';
 import 'package:pin_flip/utils/data.dart';
 
 class Settingsitems extends StatefulWidget {
@@ -11,19 +12,20 @@ class Settingsitems extends StatefulWidget {
 class _SettingsitemsState extends State<Settingsitems> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.all(24),
-      child: ListView(
-        shrinkWrap: true,
-        children: [
-          for (SettingsItemModal si
-              in DummyDataService.getSettingsTitles(context)) ...[
-            SettingsItem(
+    final settings = DummyDataService.getSettingsTitles(context)
+        .map((si) => SettingsItem(
+              icon: si.icon,
               title: si.title,
               action: si.action,
-            )
-          ]
-        ],
+            ))
+        .toList();
+
+    return Container(
+      padding: const EdgeInsets.all(16.0),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: settings,
       ),
     );
   }
@@ -34,26 +36,22 @@ class SettingsItem extends StatelessWidget {
     super.key,
     required this.action,
     required this.title,
+    required this.icon,
   });
-
+  final IconData icon;
   final String title;
   final VoidCallback action;
 
   @override
   Widget build(BuildContext context) {
-    return TextButton(
-      style: TextButton.styleFrom(
-        foregroundColor: Colors.white,
-        padding: EdgeInsets.zero,
-      ),
-      onPressed: () {
+    return ListTile(
+      title: Text(title),
+      leading: Icon(icon),
+      textColor: PinFlipColors.white,
+      iconColor: PinFlipColors.white,
+      onTap: () {
         action();
       },
-      child: Container(
-        alignment: AlignmentDirectional.centerStart,
-        padding: const EdgeInsets.symmetric(vertical: 24, horizontal: 28),
-        child: Text(title),
-      ),
     );
   }
 }
