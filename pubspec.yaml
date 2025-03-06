@@ -20,6 +20,7 @@ dependencies:
   adaptive_breakpoints: ^0.1.7
   cupertino_icons: ^1.0.6
   calendar_view: ^1.4.0
+  fl_chart: ^0.69.2
   # state 
   shared_preferences: ^2.3.3
   restart_app: ^1.2.1

@@ -1,10 +1,9 @@
-
-
 import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter_gen/gen_l10n/gallery_localizations.dart';
+import 'package:pin_flip/shared/charts/scatter.dart';
 import 'package:pin_flip/utils/colors.dart';
 import 'package:pin_flip/data/pin_flip_options.dart';
 
@@ -130,15 +129,17 @@ class _OverviewGrid extends StatelessWidget {
               order: 2,
             ),
           ),
-          _FinancialView(
-            title: GalleryLocalizations.of(context)!.pinFlipBudgets,
-            total: sumBudgetDataPrimaryAmount(budgetDataList),
-            financialItemViews:
-                buildBudgetDataListViews(budgetDataList, context),
-            buttonSemanticsLabel:
-                GalleryLocalizations.of(context)!.pinFlipSeeAllBudgets,
-            order: 3,
-          ),
+          SizedBox(width: boxWidth, child: FlutterScatterChart()),
+
+          // _FinancialView(
+          //   title: GalleryLocalizations.of(context)!.pinFlipBudgets,
+          //   total: sumBudgetDataPrimaryAmount(budgetDataList),
+          //   financialItemViews:
+          //       buildBudgetDataListViews(budgetDataList, context),
+          //   buttonSemanticsLabel:
+          //       GalleryLocalizations.of(context)!.pinFlipSeeAllBudgets,
+          //   order: 3,
+          // ),
         ],
       );
     });

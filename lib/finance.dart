@@ -1,5 +1,3 @@
-   
-
 import 'dart:math' as math;
 
 import 'package:animations/animations.dart';
@@ -9,6 +7,7 @@ import 'package:flutter_gen/gen_l10n/gallery_localizations.dart';
 import 'package:pin_flip/data/pin_flip_options.dart';
 import 'package:pin_flip/layout/adaptive.dart';
 import 'package:pin_flip/layout/text_scale.dart';
+import 'package:pin_flip/shared/charts/line_chart.dart';
 import 'package:pin_flip/shared/shared.dart';
 import 'package:pin_flip/utils/colors.dart';
 import 'package:pin_flip/utils/data.dart';
@@ -22,7 +21,7 @@ class FinancialEntityView extends StatelessWidget {
     required this.wholeAmount,
     required this.segments,
     required this.financialEntityCards,
-  })  : assert(segments.length == financialEntityCards.length);
+  }) : assert(segments.length == financialEntityCards.length);
 
   /// The amounts to assign each item.
   final List<PinFlipPieChartSegment> segments;
@@ -39,9 +38,6 @@ class FinancialEntityView extends StatelessWidget {
         children: [
           ConstrainedBox(
             constraints: BoxConstraints(
-              // We decrease the max height to ensure the [PinFlipPieChart] does
-              // not take up the full height when it is smaller than
-              // [kPieChartMaxSize].
               maxHeight: math.min(
                 constraints.biggest.shortestSide * 0.9,
                 maxWidth,
@@ -131,7 +127,7 @@ class FinancialEntityCategoryView extends StatelessWidget {
                         alignment: Alignment.center,
                         height: 32 + 60 * (cappedTextScale(context) - 1),
                         padding: const EdgeInsets.symmetric(horizontal: 12),
-                        child: VerticalFractionBar(  
+                        child: VerticalFractionBar(
                           color: indicatorColor,
                           fraction: indicatorFraction,
                         ),
@@ -327,19 +323,24 @@ class FinancialEntityCategoryDetailsPage extends StatelessWidget {
     return ApplyTextOptions(
       child: Scaffold(
         appBar: AppBar(
-          elevation: 0,
+          backgroundColor: Theme.of(context).scaffoldBackgroundColor,
+          // elevation: 0,
           centerTitle: true,
           title: Text(
             GalleryLocalizations.of(context)!.pinFlipAccountDataChecking,
-            style: Theme.of(context).textTheme.bodyMedium!.copyWith(fontSize: 18),
+            style:
+                Theme.of(context).textTheme.bodyMedium!.copyWith(fontSize: 18),
           ),
         ),
         body: Column(
           children: [
-            SizedBox(
-              height: 200,
-              width: double.infinity,
-              child: PinFlipLineChart(events: items),
+            SingleChildScrollView(
+              scrollDirection: !isDesktop ? Axis.horizontal : Axis.vertical,
+              child: SizedBox(
+                height: 250,
+                width: isDesktop ? double.infinity : 600,
+                child: LineChartSample(),
+              ),
             ),
             Expanded(
               child: Padding(
@@ -380,7 +381,8 @@ class _DetailedEventCard extends StatelessWidget {
     final isDesktop = isDisplayDesktop(context);
     return TextButton(
       style: TextButton.styleFrom(
-        foregroundColor: Colors.black, padding: const EdgeInsets.symmetric(horizontal: 16),
+        foregroundColor: Colors.black,
+        padding: const EdgeInsets.symmetric(horizontal: 16),
       ),
       onPressed: () {},
       child: Column(

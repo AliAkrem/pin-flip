@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 /// assignments that are common in other apps. Instead of primarily mapping to
 /// component type and part, they are assigned round robin based on layout.
 class PinFlipColors {
-  static const List<Color> accountColors = <Color>[
+  static const List<Color> primaryColors = <Color>[
     Color(0xFF005D57),
     Color(0xFF04B97F),
     Color(0xFF37EFBA),
@@ -46,7 +46,7 @@ class PinFlipColors {
 
   /// Convenience method to get a single account color with position i.
   static Color accountColor(int i) {
-    return cycledColor(accountColors, i);
+    return cycledColor(primaryColors, i);
   }
 
   /// Convenience method to get a single bill color with position i.
