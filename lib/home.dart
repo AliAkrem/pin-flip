@@ -132,15 +132,15 @@ class _HomePageState extends State<HomePage>
     } else {
       tabBarView = Column(
         children: [
-          _PinFlipTabBar(
-            tabs: _buildTabs(context: context, theme: theme),
-            tabController: _tabController,
-          ),
           Expanded(
             child: TabBarView(
               controller: _tabController,
               children: _buildTabViews(),
             ),
+          ),
+          _PinFlipTabBar(
+            tabs: _buildTabs(context: context, theme: theme),
+            tabController: _tabController,
           ),
         ],
       );
@@ -163,10 +163,12 @@ class _HomePageState extends State<HomePage>
           ),
           endDrawerEnableOpenDragGesture: false,
           endDrawer: !isDesktop
-              ? Drawer(
-                  backgroundColor: Theme.of(context).scaffoldBackgroundColor,
-                  width: 300,
-                  child: const Settingsitems(),
+              ? SafeArea(
+                  child: Drawer(
+                    backgroundColor: Theme.of(context).scaffoldBackgroundColor,
+                    width: 300,
+                    child: const Settingsitems(),
+                  ),
                 )
               : null),
     );
