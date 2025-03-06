@@ -6,14 +6,14 @@ import 'package:pin_flip/shared/settingsItems.dart';
 import 'package:pin_flip/tabs/sidebar.dart';
 import "package:flutter_gen/gen_l10n/gallery_localizations.dart";
 
-class SettingsView extends StatefulWidget {
-  const SettingsView({super.key});
+class PrifileView extends StatefulWidget {
+  const PrifileView({super.key});
 
   @override
-  _SettingsViewState createState() => _SettingsViewState();
+  _PrifileViewState createState() => _PrifileViewState();
 }
 
-class _SettingsViewState extends State<SettingsView> {
+class _PrifileViewState extends State<PrifileView> {
   @override
   Widget build(BuildContext context) {
     final isDesktop = isDisplayDesktop(context);

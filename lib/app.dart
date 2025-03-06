@@ -1,3 +1,4 @@
+import 'package:calendar_view/calendar_view.dart';
 import 'package:flutter_gen/gen_l10n/gallery_localizations.dart';
 import 'package:animations/animations.dart';
 import 'package:flutter/material.dart';
@@ -26,32 +27,33 @@ class _PinFlipAppState extends State<PinFlipApp> {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      restorationScopeId: 'pinFlip_app',
-      title: 'PinFlip',
-      debugShowCheckedModeBanner: false,
-      
-      theme: buildPinFlipTheme().copyWith(
-        platform: PinFlipOptions.of(context).platform,
-        
-        pageTransitionsTheme: PageTransitionsTheme(
-          builders: {
-            for (var type in TargetPlatform.values)
-              type: sharedZAxisTransitionBuilder,
-          },
+    return CalendarControllerProvider(
+      controller: EventController(),
+      child: MaterialApp(
+        restorationScopeId: 'pinFlip_app',
+        title: 'PinFlip',
+        debugShowCheckedModeBanner: false,
+        theme: buildPinFlipTheme().copyWith(
+          platform: PinFlipOptions.of(context).platform,
+          pageTransitionsTheme: PageTransitionsTheme(
+            builders: {
+              for (var type in TargetPlatform.values)
+                type: sharedZAxisTransitionBuilder,
+            },
+          ),
         ),
+        localizationsDelegates: GalleryLocalizations.localizationsDelegates,
+        supportedLocales: GalleryLocalizations.supportedLocales,
+        localeResolutionCallback: (locale, supportedLocales) {
+          return deviceLocale;
+        },
+        locale: PinFlipOptions.of(context).locale,
+        initialRoute: PinFlipApp.loginRoute,
+        routes: <String, WidgetBuilder>{
+          PinFlipApp.homeRoute: (context) => const HomePage(),
+          PinFlipApp.loginRoute: (context) => const LoginPage(),
+        },
       ),
-      localizationsDelegates: GalleryLocalizations.localizationsDelegates,
-      supportedLocales: GalleryLocalizations.supportedLocales,
-      localeResolutionCallback: (locale, supportedLocales) {
-        return deviceLocale;
-      },
-      locale: PinFlipOptions.of(context).locale,
-      initialRoute: PinFlipApp.loginRoute,
-      routes: <String, WidgetBuilder>{
-        PinFlipApp.homeRoute: (context) => const HomePage(),
-        PinFlipApp.loginRoute: (context) => const LoginPage(),
-      },
     );
   }
 }

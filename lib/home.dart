@@ -9,8 +9,9 @@ import 'package:pin_flip/tabs/budgets.dart';
 import 'package:pin_flip/tabs/overview.dart';
 import 'package:pin_flip/tabs/profile.dart';
 import "package:flutter_gen/gen_l10n/gallery_localizations.dart";
+import 'package:pin_flip/tabs/time_line.dart';
 
-const int tabCount = 5;
+const int tabCount = 6;
 const int turnsToRotateRight = 1;
 const int turnsToRotateLeft = 3;
 
@@ -62,7 +63,8 @@ class _HomePageState extends State<HomePage>
 
     if (isDesktop) {
       final isTextDirectionRtl =
-          PinFlipOptions.of(context).resolvedTextDirection() == TextDirection.rtl;
+          PinFlipOptions.of(context).resolvedTextDirection() ==
+              TextDirection.rtl;
       final verticalRotation =
           isTextDirectionRtl ? turnsToRotateLeft : turnsToRotateRight;
       final revertVerticalRotation =
@@ -209,9 +211,17 @@ class _HomePageState extends State<HomePage>
       ),
       _PinFlipTab(
         theme: theme,
+        iconData: Icons.calendar_view_week,
+        title: "time line",
+        tabIndex: 4,
+        tabController: _tabController,
+        isVertical: isVertical,
+      ),
+      _PinFlipTab(
+        theme: theme,
         iconData: Icons.person,
         title: GalleryLocalizations.of(context)!.tabTitleProfile,
-        tabIndex: 4,
+        tabIndex: 5,
         tabController: _tabController,
         isVertical: isVertical,
       ),
@@ -224,7 +234,8 @@ class _HomePageState extends State<HomePage>
       AccountsView(),
       BillsView(),
       BudgetsView(),
-      SettingsView(),
+      TimeLine(),
+      PrifileView(),
     ];
   }
 }

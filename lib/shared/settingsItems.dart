@@ -45,8 +45,14 @@ class SettingsItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListTile(
-      title: Text(title),
-      leading: Icon(icon),
+      title: Text(
+        title,
+        style: Theme.of(context).textTheme.bodyMedium,
+      ),
+      leading: Icon(
+        icon,
+        size: Theme.of(context).textTheme.bodyLarge?.fontSize,
+      ),
       textColor: PinFlipColors.white,
       iconColor: PinFlipColors.white,
       onTap: () {

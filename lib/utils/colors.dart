@@ -1,4 +1,4 @@
-    // PinFlip are not like the typical color
+// PinFlip are not like the typical color
 import 'package:flutter/material.dart';
 
 /// assignments that are common in other apps. Instead of primarily mapping to
@@ -39,6 +39,10 @@ class PinFlipColors {
 
   static const Color focusColor = Color(0xCCFFFFFF);
   static const Color dividerColor = Color(0xAA282828);
+
+  static const Color courseColor = Color(0xFF04B97F);
+  static const Color tpColor = Color(0xFF37EFBA);
+  static const Color tdColor = Color(0xFF007D51);
 
   /// Convenience method to get a single account color with position i.
   static Color accountColor(int i) {
